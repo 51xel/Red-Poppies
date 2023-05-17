@@ -1,0 +1,24 @@
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\bin\Debug\net6.0-windows\Red-Poppies UI.exe
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\bin\Debug\net6.0-windows\Red-Poppies UI.deps.json
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\bin\Debug\net6.0-windows\Red-Poppies UI.runtimeconfig.json
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\bin\Debug\net6.0-windows\Red-Poppies UI.dll
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\bin\Debug\net6.0-windows\Red-Poppies UI.pdb
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.csproj.AssemblyReference.cache
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\App.g.cs
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI_MarkupCompile.cache
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI_MarkupCompile.lref
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.g.resources
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.AssemblyInfoInputs.cache
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.AssemblyInfo.cs
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.csproj.CoreCompileInputs.cache
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.dll
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\refint\Red-Poppies UI.dll
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.pdb
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\Red-Poppies UI.genruntimeconfig.cache
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\ref\Red-Poppies UI.dll
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\View\UserControls\TitlebarButtons.g.cs
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\View\UserControls\TitlebarButtons.baml
+D:\Desktop\C#\Red-Poppies\Red-Poppies\Red-Poppies UI\Red-Poppies UI\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

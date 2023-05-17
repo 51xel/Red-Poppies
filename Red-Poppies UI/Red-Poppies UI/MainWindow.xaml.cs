@@ -1,25 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Red_Poppies_UI.Utils;
+using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Red_Poppies_UI {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+            WinMax.DoSourceInitialized(this);
+        }
+
+        private void Window_StateChanged(object sender, EventArgs e) {
+            if (WindowState == WindowState.Maximized) {
+                Uri uri = new Uri("/Images/Icons/restore.png", UriKind.Relative);
+                ImageSource imgSource = new BitmapImage(uri);
+                TitlebarButtons.MaximizeButtonImage.Source = imgSource;
+            }
+            else if (WindowState == WindowState.Normal) {
+                Uri uri = new Uri("/Images/Icons/maximize.png", UriKind.Relative);
+                ImageSource imgSource = new BitmapImage(uri);
+                TitlebarButtons.MaximizeButtonImage.Source = imgSource;
+            }
         }
     }
 }
