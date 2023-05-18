@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Red_Poppies_UI</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Icons\close.png" />
+    <None Remove="Images\Icons\maximize.png" />
+    <None Remove="Images\Icons\minimize.png" />
+    <None Remove="Images\Icons\restore.png" />
+    <None Remove="Images\Wallpaper.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Icons\close.png" />
+    <Resource Include="Images\Icons\maximize.png" />
+    <Resource Include="Images\Icons\minimize.png" />
+    <Resource Include="Images\Icons\restore.png" />
+    <Resource Include="Images\Wallpaper.jpg" />
+  </ItemGroup>
+
+</Project>
