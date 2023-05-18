@@ -19,7 +19,7 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="25"/>
     </WindowChrome.WindowChrome>
-    
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Images/Wallpaper.jpg"/>
@@ -32,11 +32,13 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="25*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="15*"/>
         </Grid.ColumnDefinitions>
 
         <userControls:TitlebarButtons x:Name="TitlebarButtons" Grid.Row="0" Grid.ColumnSpan="3" Panel.ZIndex="1"/>
+
+        <userControls:ChoiseFrom x:Name="ChoiseForm" Grid.Row="1" Grid.Column="1"/>
     </Grid>
 </Window>

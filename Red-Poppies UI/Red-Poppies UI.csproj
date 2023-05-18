@@ -9,18 +9,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\PTMono.ttf" />
     <None Remove="Images\Icons\close.png" />
     <None Remove="Images\Icons\maximize.png" />
     <None Remove="Images\Icons\minimize.png" />
     <None Remove="Images\Icons\restore.png" />
+    <None Remove="Images\Logo.png" />
     <None Remove="Images\Wallpaper.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\PTMono.ttf" />
     <Resource Include="Images\Icons\close.png" />
     <Resource Include="Images\Icons\maximize.png" />
     <Resource Include="Images\Icons\minimize.png" />
     <Resource Include="Images\Icons\restore.png" />
+    <Resource Include="Images\Logo.png" />
     <Resource Include="Images\Wallpaper.jpg" />
   </ItemGroup>
 
