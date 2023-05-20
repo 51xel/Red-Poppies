@@ -13,7 +13,7 @@ namespace Red_Poppies_UI {
 
         private void Window_StateChanged(object sender, EventArgs e) {
             if (WindowState == WindowState.Maximized) {
-                Uri uri = new Uri("/Images/Icons/restore.png", UriKind.Relative);
+                Uri uri = new Uri("/Images/Icons/restore.png", UriKind.Relative);//fsdgsgsdfgs
                 ImageSource imgSource = new BitmapImage(uri);
                 TitlebarButtons.MaximizeButtonImage.Source = imgSource;
             }
