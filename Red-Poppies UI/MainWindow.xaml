@@ -42,7 +42,7 @@
         <userControls:ChoiseFrom x:Name="ChoiseForm" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
 
         <userControls:ClientLog x:Name="ClientLog" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
-        
-        <userControls:WorkerLog x:Name="WorkerLog" Grid.Row="1" Grid.Column="1"/>
+
+        <userControls:WorkerLog x:Name="WorkerLog" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
     </Grid>
 </Window>
