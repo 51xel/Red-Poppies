@@ -13,6 +13,8 @@
             <Setter Property="Margin" Value="10"/>
         </Style>
 
+        
+        
         <Style TargetType="{x:Type ListViewItem}">
             <Setter Property="Template">
                 <Setter.Value>
@@ -20,18 +22,11 @@
                         <Button Name="RowElement"
                                 Background="Transparent"
                                 BorderBrush="Transparent"
-                                FontFamily="/Fonts/#PT Mono"
-                                FontSize="14"
-                                Foreground="#28394b"
-                                FontWeight="Normal">
+                                FontFamily="/Fonts/#PT Mono" 
+                                FontSize="14" 
+                                Foreground="#28394b">
                             <GridViewRowPresenter/>
                         </Button>
-
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" TargetName="RowElement" Value="Black"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

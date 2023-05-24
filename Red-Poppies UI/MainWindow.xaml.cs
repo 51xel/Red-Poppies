@@ -23,5 +23,9 @@ namespace Red_Poppies_UI {
                 TitlebarButtons.MaximizeButtonImage.Source = imgSource;
             }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e) {
+            ChoiseForm.Visibility = Visibility.Visible;
+        }
     }
 }

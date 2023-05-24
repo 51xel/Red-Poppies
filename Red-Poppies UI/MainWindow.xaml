@@ -14,7 +14,8 @@
         
         AllowsTransparency="True"
         
-        StateChanged="Window_StateChanged">
+        StateChanged="Window_StateChanged"
+        Loaded="Window_Loaded">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="25"/>
@@ -45,6 +46,6 @@
 
         <userControls:WorkerLog x:Name="WorkerLog" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
 
-        <userControls:ClientWorkDesk x:Name="ClientWorkDesk" Grid.Row="1" Grid.Column="1"/>
+        <userControls:ClientWorkDesk x:Name="ClientWorkDesk" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
     </Grid>
 </Window>

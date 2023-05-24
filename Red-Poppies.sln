@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red-Poppies UI", "Red-Poppies UI\Red-Poppies UI.csproj", "{77414103-1213-4FDD-844D-53419DFC5C7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Red-Poppies UI", "Red-Poppies UI\Red-Poppies UI.csproj", "{77414103-1213-4FDD-844D-53419DFC5C7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Red-Poppies Library", "Red-Poppies Library\Red-Poppies Library.csproj", "{1F648A5D-B8FB-4369-B0BB-FDA6107F1AD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{77414103-1213-4FDD-844D-53419DFC5C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77414103-1213-4FDD-844D-53419DFC5C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77414103-1213-4FDD-844D-53419DFC5C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F648A5D-B8FB-4369-B0BB-FDA6107F1AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F648A5D-B8FB-4369-B0BB-FDA6107F1AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F648A5D-B8FB-4369-B0BB-FDA6107F1AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F648A5D-B8FB-4369-B0BB-FDA6107F1AD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

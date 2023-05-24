@@ -15,13 +15,8 @@ using System.Windows.Shapes;
 
 namespace Red_Poppies_UI.View.UserControls
 {
-    /// <summary>
-    /// Interaction logic for ClientLog.xaml
-    /// </summary>
-    public partial class ClientLog : UserControl
-    {
-        public ClientLog()
-        {
+    public partial class ClientLog : UserControl{
+        public ClientLog(){
             InitializeComponent();
         }
     }

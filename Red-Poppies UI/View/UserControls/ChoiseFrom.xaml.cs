@@ -21,5 +21,19 @@ namespace Red_Poppies_UI.View.UserControls {
         public ChoiseFrom() {
             InitializeComponent();
         }
+
+        private void ClientButton_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            win.ChoiseForm.Visibility = Visibility.Hidden;
+            win.ClientLog.Visibility = Visibility.Visible;
+        }
+
+        private void WorkerButton_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            win.ChoiseForm.Visibility = Visibility.Hidden;
+            win.WorkerLog.Visibility = Visibility.Visible;
+        }
     }
 }

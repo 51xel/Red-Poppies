@@ -34,6 +34,27 @@ namespace Red_Poppies_UI.View.UserControls
             InitializeComponent();
 
             List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
+            List.Items.Add(new Person { Name = "Anton", NumberOfRoom = "1", Type = "Luxe", Pay = "123", Days="14", Date="12.12.12"});
         }
     }
 }
