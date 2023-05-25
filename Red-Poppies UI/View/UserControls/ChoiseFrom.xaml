@@ -78,8 +78,8 @@
                 <TextBlock Grid.Row="0" Grid.Column="1" Text="Червоні маки" FontSize="72" TextWrapping="Wrap" TextAlignment="Center" Foreground="#28394b" FontFamily="/Fonts/#PT Mono" Opacity="0.85"/>
                 <Image Grid.Row="1" Grid.Column="1" Source="/Images/Logo.png" Width="130"/>
 
-                <Button Grid.Row="2" Grid.Column="1" Content="клієнт" Click="ClientButton_Click"/>
-                <Button Grid.Row="3" Grid.Column="1" Content="робітник" Click="WorkerButton_Click"/>
+                <Button Grid.Row="2" Grid.Column="1" Name="ClientButton" Content="клієнт" Click="ClientButton_Click" IsEnabled="False" Opacity="0.5"/>
+                <Button Grid.Row="3" Grid.Column="1" Name="WorkerButton" Content="робітник" Click="WorkerButton_Click" IsEnabled="False" Opacity="0.5"/>
             </Grid>
         </Grid>
     </Grid>

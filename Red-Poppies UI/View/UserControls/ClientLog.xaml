@@ -125,8 +125,8 @@
                 </Grid.RowDefinitions>
 
                 <Image Grid.Row="0" Grid.Column="1" Source="/Images/Logo.png" Width="130"/>
-                <TextBox Grid.Row="1" Grid.Column="1"/>
-                <Button Grid.Row="2" Grid.Column="1" Content="Вхід"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Name="NameAndSurname"/>
+                <Button Grid.Row="2" Grid.Column="1" Content="Вхід" Click="EnterButton_Click"/>
             </Grid>
         </Grid>
     </Grid>

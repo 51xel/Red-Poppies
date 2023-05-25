@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Red-Poppies Library\Red-Poppies Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Fonts\PTMono.ttf" />
     <Resource Include="Images\Icons\close.png" />
     <Resource Include="Images\Icons\maximize.png" />
