@@ -13,9 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Red_Poppies_UI.View.UserControls{
-    public partial class ClientWorkDesk : UserControl{
-        public ClientWorkDesk(){
+namespace Red_Poppies_UI.View.UserControls
+{
+    /// <summary>
+    /// Interaction logic for CustomList.xaml
+    /// </summary>
+    public partial class CustomList : UserControl
+    {
+        public CustomList()
+        {
             InitializeComponent();
         }
     }

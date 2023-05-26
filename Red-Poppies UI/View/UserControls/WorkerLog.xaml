@@ -128,7 +128,7 @@
                 <Image Grid.Row="0" Grid.Column="1" Source="/Images/Logo.png" Width="130"/>
                 <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxName"/>
                 <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBoxPassword"/>
-                <Button Grid.Row="3" Grid.Column="1" Content="Вхід" Click="Button_Click"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="Вхід" Click="EnterButton_Click"/>
             </Grid>
         </Grid>
     </Grid>

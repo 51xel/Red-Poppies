@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Scaffolding.Metadata;
 using System.Text.RegularExpressions;
 
 namespace Red_Poppies_Library {
@@ -18,7 +17,6 @@ namespace Red_Poppies_Library {
         public string Surname { get; set; }
         public string Password { get; set; }
     }
-
 
     public class MySQL : DbContext {
         private string _configFilePath = "config.txt";
