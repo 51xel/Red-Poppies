@@ -31,10 +31,19 @@ namespace Red_Poppies_UI.View.UserControls {
         private void Delete_Click(object sender, RoutedEventArgs e) {
             var win = (MainWindow)Window.GetWindow(this);
 
-            win.ToChange = false;
-            win.ToAdd = false;
+            if (!win.ToDelete) {
+                win.ToChange = false;
+                win.ToAdd = false;
 
-            win.ToDelete = true;
+                win.ToDelete = true;
+
+                SetModeColor(Colors.Transparent, Colors.Red);
+            }
+            else {
+                win.ToDelete = false;
+                SetModeColor(Colors.Transparent, Colors.Transparent);
+            }
+            
         }
 
         private void Add_Click(object sender, RoutedEventArgs e) {
@@ -44,6 +53,14 @@ namespace Red_Poppies_UI.View.UserControls {
             win.ToDelete = false;
 
             win.ToAdd = true;
+        }
+
+        public void SetModeColor(Color from, Color to) {
+            ModeColor.Background = new LinearGradientBrush {
+                EndPoint = new Point(0.5, 1),
+                StartPoint = new Point(0.5, 0),
+                GradientStops = { new GradientStop(from, 0), new GradientStop(to, 1) }
+            };
         }
     }
 }

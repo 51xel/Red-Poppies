@@ -63,6 +63,8 @@ namespace Red_Poppies_UI {
                 WorkerWorkDesk.List.List.ItemsSource = ViewList.GetClientList(MySQL.Holidaymakers.ToList());
 
                 ToDelete = false;
+
+                WorkerWorkDesk.SetModeColor(Colors.Transparent, Colors.Transparent);
             }
         }
 

@@ -82,7 +82,19 @@
                 <RowDefinition Height ="445"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
+            <Border CornerRadius="26" Opacity="0.9" Grid.RowSpan="2" Name="ModeColor">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Transparent"/>
+                        <GradientStop Color="Transparent" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Effect>
+                    <BlurEffect Radius="16" KernelType="Gaussian"/>
+                </Border.Effect>
+            </Border>
+
             <Border CornerRadius="26" Opacity="0.9" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
