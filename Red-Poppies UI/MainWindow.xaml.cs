@@ -7,13 +7,22 @@ using Red_Poppies_Library;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace Red_Poppies_UI {
     public partial class MainWindow : Window {
         public MySQL MySQL { get; set; }
+
+        public bool ToChange = false;
+        public bool ToAdd= false;
+        public bool ToDelete = false;
+
         public MainWindow() {
             InitializeComponent();
             WinMax.DoSourceInitialized(this);
+
+            WorkerWorkDesk.List.ClickRowElement += ClickRowElement;
+            ClientWorkDesk.List.ClickRowElement += ClickRowElement;
         }
 
         private void Window_StateChanged(object sender, EventArgs e) {
@@ -31,10 +40,30 @@ namespace Red_Poppies_UI {
 
         private async void Window_Loaded(object sender, RoutedEventArgs e) {
             ChoiseForm.Visibility = Visibility.Visible;
-
             MySQL = new MySQL();
-
             await CheckConnect();
+        }
+
+        private void ClickRowElement(object sender, RoutedEventArgs e) {
+            if (ToChange) {
+
+                ToChange = false;
+            }
+            else if (ToAdd) {
+
+                ToAdd = false;
+            }else if (ToDelete) {
+                var client = (((sender as Button).Content as GridViewRowPresenter).Content as HolidaymakersToView).Name.Split();
+
+                var test = MySQL.Holidaymakers.FirstOrDefault(el => (el.Name == client[1]) && el.Surname == client[0]);
+
+                MySQL.Holidaymakers.Remove(test);
+                MySQL.SaveChanges();
+
+                WorkerWorkDesk.List.List.ItemsSource = ViewList.GetClientList(MySQL.Holidaymakers.ToList());
+
+                ToDelete = false;
+            }
         }
 
         private async Task CheckConnect() {

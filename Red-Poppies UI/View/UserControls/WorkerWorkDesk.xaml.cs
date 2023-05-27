@@ -14,12 +14,36 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Red_Poppies_UI.View.UserControls {
-    /// <summary>
-    /// Interaction logic for WorkerWorkDesk.xaml
-    /// </summary>
     public partial class WorkerWorkDesk : UserControl {
         public WorkerWorkDesk() {
             InitializeComponent();
+        }
+
+        private void Change_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            win.ToAdd = false;
+            win.ToDelete = false;
+
+            win.ToChange = true;
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            win.ToChange = false;
+            win.ToAdd = false;
+
+            win.ToDelete = true;
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            win.ToChange = false;
+            win.ToDelete = false;
+
+            win.ToAdd = true;
         }
     }
 }

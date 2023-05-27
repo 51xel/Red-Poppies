@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Red_Poppies_UI.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="467" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <Style TargetType="{x:Type ListView}">
             <Setter Property="Background" Value="Transparent"/>
@@ -22,7 +22,8 @@
                                 BorderBrush="Transparent"
                                 FontFamily="/Fonts/#PT Mono" 
                                 FontSize="14" 
-                                Foreground="#28394b">
+                                Foreground="#28394b"
+                                Click="ClickRowElement">
                             <GridViewRowPresenter/>
                         </Button>
                     </ControlTemplate>
@@ -66,19 +67,18 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="90*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <Line Grid.Row="0" Grid.Column="1" X1="13" Y1="78" X2="13" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="263" Y1="78" X2="263" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="293" Y1="78" X2="293" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="373" Y1="78" X2="373" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="493" Y1="78" X2="493" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="553" Y1="78" X2="553" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
-        <Line Grid.Row="0" Grid.Column="1" X1="753" Y1="78" X2="753" Y2="420" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="13" Y1="42" X2="13" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="263" Y1="42" X2="263" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="293" Y1="42" X2="293" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="373" Y1="42" X2="373" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="493" Y1="42" X2="493" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="553" Y1="42" X2="553" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
+        <Line Grid.Row="0" Grid.Column="1" X1="753" Y1="42" X2="753" Y2="430" Stroke="#2f455a" StrokeThickness="2"/>
 
-        <ListView Grid.Row="0" Grid.Column="1" Name="List" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="False" Height="370">
+        <ListView Grid.Row="0" Grid.Column="1" Name="List" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="False" Height="420">
             <ListView.View>
                 <GridView AllowsColumnReorder="False">
                     <GridViewColumn Header="Ім'я та Фамілія" Width="250">

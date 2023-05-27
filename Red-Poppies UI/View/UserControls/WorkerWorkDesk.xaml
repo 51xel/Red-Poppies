@@ -6,10 +6,80 @@
              xmlns:local="clr-namespace:Red_Poppies_UI.View.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="PrintButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Border x:Name="border" CornerRadius="26" Background="White"/>
+                            <Image Source="/Images/Icons/print.png" Width="30" RenderOptions.BitmapScalingMode ="HighQuality"/>
+                            <Grid.RenderTransform>
+                                <ScaleTransform/>
+                            </Grid.RenderTransform>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.03" ScaleY="1.03"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="FuncButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Border x:Name="border" CornerRadius="20" Background="White"/>
+                            <TextBlock Text="{TemplateBinding Content}"
+                                       HorizontalAlignment="Center" 
+                                       VerticalAlignment="Center"
+                                       Foreground="#28394b" 
+                                       FontSize="20"
+                                       FontFamily="/Fonts/#PT Mono"/>
+                            
+                            <Grid.RenderTransform>
+                                <ScaleTransform/>
+                            </Grid.RenderTransform>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.8"/>
+                            </Trigger>
+
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.03" ScaleY="1.03"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid Width="800" Height="500">
             <Grid.RowDefinitions>
-                <RowDefinition Height ="467"/>
+                <RowDefinition Height ="445"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             
@@ -25,7 +95,23 @@
                 </Border.Effect>
             </Border>
 
-            <local:CustomList x:Name="List"/>
+            <local:CustomList x:Name="List" Grid.Row="0" Margin="0, 15, 0 ,0"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="15*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="15*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Width="40" Height="40" Margin="5" Style="{StaticResource PrintButtonStyle}"/>
+                <Button Grid.Column="2" Width="110" Margin="10" Style="{StaticResource FuncButtonStyle}" Content="Змінити" Click="Change_Click"/>
+                <Button Grid.Column="3" Width="110" Margin="10" Style="{StaticResource FuncButtonStyle}" Content="Видалити" Click="Delete_Click"/>
+                <Button Grid.Column="4" Width="110" Margin="10" Style="{StaticResource FuncButtonStyle}" Content="Додати" Click="Add_Click"/>
+            </Grid>
         </Grid>
     </Grid>
 </UserControl>

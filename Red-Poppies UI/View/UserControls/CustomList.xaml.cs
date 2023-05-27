@@ -20,6 +20,8 @@ namespace Red_Poppies_UI.View.UserControls
     /// </summary>
     public partial class CustomList : UserControl
     {
+        public RoutedEventHandler ClickRowElement;
+
         public CustomList()
         {
             InitializeComponent();
