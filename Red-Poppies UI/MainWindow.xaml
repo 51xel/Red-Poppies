@@ -49,5 +49,7 @@
         <userControls:ClientWorkDesk x:Name="ClientWorkDesk" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
         
         <userControls:WorkerWorkDesk x:Name="WorkerWorkDesk" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        
+        <userControls:ChangeWindow x:Name="ChangeWindow" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
     </Grid>
 </Window>

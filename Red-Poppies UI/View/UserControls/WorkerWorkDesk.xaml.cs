@@ -22,10 +22,18 @@ namespace Red_Poppies_UI.View.UserControls {
         private void Change_Click(object sender, RoutedEventArgs e) {
             var win = (MainWindow)Window.GetWindow(this);
 
-            win.ToAdd = false;
-            win.ToDelete = false;
+            if (!win.ToChange) {
+                win.ToAdd = false;
+                win.ToDelete = false;
 
-            win.ToChange = true;
+                win.ToChange = true;
+
+                SetModeColor(Colors.Transparent, Colors.Orange);
+            }
+            else {
+                win.ToChange = false;
+                SetModeColor(Colors.Transparent, Colors.Transparent);
+            }
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e) {

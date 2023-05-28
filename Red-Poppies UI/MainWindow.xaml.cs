@@ -46,8 +46,20 @@ namespace Red_Poppies_UI {
 
         private void ClickRowElement(object sender, RoutedEventArgs e) {
             if (ToChange) {
+                WorkerWorkDesk.Visibility = Visibility.Hidden;
+                ChangeWindow.Visibility = Visibility.Visible;
+
+                var client = (((sender as Button).Content as GridViewRowPresenter).Content as HolidaymakersToView);
+
+                ChangeWindow.TextBoxName.Text = client.Name.Split()[1];
+                ChangeWindow.TextBoxSurname.Text = client.Name.Split()[0];
+                ChangeWindow.TextBoxTypeOfRoom.Text = client.Type_of_room;
+                ChangeWindow.TextBoxNumberOfRoom.Text = client.Number_of_room.ToString();
+                ChangeWindow.TextBoxDate.Text = client.Date.ToString();
 
                 ToChange = false;
+
+                WorkerWorkDesk.SetModeColor(Colors.Transparent, Colors.Transparent);
             }
             else if (ToAdd) {
 
@@ -55,9 +67,9 @@ namespace Red_Poppies_UI {
             }else if (ToDelete) {
                 var client = (((sender as Button).Content as GridViewRowPresenter).Content as HolidaymakersToView).Name.Split();
 
-                var test = MySQL.Holidaymakers.FirstOrDefault(el => (el.Name == client[1]) && el.Surname == client[0]);
+                var clientToRemove = MySQL.Holidaymakers.FirstOrDefault(el => (el.Name == client[1]) && el.Surname == client[0]);
 
-                MySQL.Holidaymakers.Remove(test);
+                MySQL.Holidaymakers.Remove(clientToRemove);
                 MySQL.SaveChanges();
 
                 WorkerWorkDesk.List.List.ItemsSource = ViewList.GetClientList(MySQL.Holidaymakers.ToList());
