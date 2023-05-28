@@ -61,6 +61,9 @@ namespace Red_Poppies_UI.View.UserControls {
             win.ToDelete = false;
 
             win.ToAdd = true;
+
+            Visibility = Visibility.Hidden;
+            win.AddWindow.Visibility = Visibility.Visible;
         }
 
         public void SetModeColor(Color from, Color to) {
