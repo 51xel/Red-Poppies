@@ -10,11 +10,12 @@
         Title="Red Poppies" 
         Height="720" Width="1280"
         WindowStyle="None"
-        MinHeight="450" MinWidth="800"
+        MinHeight="550" MinWidth="1200"
         
         AllowsTransparency="True"
         
-        StateChanged="Window_StateChanged">
+        StateChanged="Window_StateChanged"
+        Loaded="Window_Loaded">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="25"/>
@@ -26,9 +27,9 @@
         </Grid.Background>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -39,6 +40,18 @@
 
         <userControls:TitlebarButtons x:Name="TitlebarButtons" Grid.Row="0" Grid.ColumnSpan="3" Panel.ZIndex="1"/>
 
-        <userControls:ChoiseFrom x:Name="ChoiseForm" Grid.Row="1" Grid.Column="1"/>
+        <userControls:ChoiseFrom x:Name="ChoiseForm" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+
+        <userControls:ClientLog x:Name="ClientLog" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+
+        <userControls:WorkerLog x:Name="WorkerLog" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+
+        <userControls:ClientWorkDesk x:Name="ClientWorkDesk" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        
+        <userControls:WorkerWorkDesk x:Name="WorkerWorkDesk" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+        
+        <userControls:ChangeWindow x:Name="ChangeWindow" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
+
+        <userControls:AddWindow x:Name="AddWindow" Grid.Row="1" Grid.Column="1" Visibility="Hidden"/>
     </Grid>
 </Window>

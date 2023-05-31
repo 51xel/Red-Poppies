@@ -14,12 +14,23 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Red_Poppies_UI.View.UserControls {
-    /// <summary>
-    /// Interaction logic for ChoiseFrom.xaml
-    /// </summary>
     public partial class ChoiseFrom : UserControl {
         public ChoiseFrom() {
             InitializeComponent();
+        }
+
+        private void ClientButton_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            Visibility = Visibility.Hidden;
+            win.ClientLog.Visibility = Visibility.Visible;
+        }
+
+        private void WorkerButton_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            Visibility = Visibility.Hidden;
+            win.WorkerLog.Visibility = Visibility.Visible;
         }
     }
 }
