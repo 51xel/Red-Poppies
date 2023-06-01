@@ -8,14 +8,17 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Collections.Generic;
 
 namespace Red_Poppies_UI {
     public partial class MainWindow : Window {
         public MySQL MySQL { get; set; }
+        public List<HolidaymakersToView> ListToPrint = new List<HolidaymakersToView>();
 
         public bool ToChange = false;
         public bool ToAdd= false;
         public bool ToDelete = false;
+        public bool ToPrint = false;
 
         public MainWindow() {
             InitializeComponent();
@@ -62,7 +65,6 @@ namespace Red_Poppies_UI {
                 WorkerWorkDesk.SetModeColor(Colors.Transparent, Colors.Transparent);
             }
             else if (ToAdd) {
-
                 ToAdd = false;
             }else if (ToDelete) {
                 var client = (((sender as Button).Content as GridViewRowPresenter).Content as HolidaymakersToView).Name.Split();
@@ -77,6 +79,10 @@ namespace Red_Poppies_UI {
                 ToDelete = false;
 
                 WorkerWorkDesk.SetModeColor(Colors.Transparent, Colors.Transparent);
+            }else if (ToPrint) {
+                ListToPrint.Add(((sender as Button).Content as GridViewRowPresenter).Content as HolidaymakersToView);
+
+                (sender as Button).Background = Brushes.Red;
             }
         }
 

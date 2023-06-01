@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Red_Poppies_Library;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Red_Poppies_UI.View.UserControls {
     public partial class WorkerWorkDesk : UserControl {
@@ -25,6 +16,7 @@ namespace Red_Poppies_UI.View.UserControls {
             if (!win.ToChange) {
                 win.ToAdd = false;
                 win.ToDelete = false;
+                win.ToPrint = false;
 
                 win.ToChange = true;
 
@@ -42,6 +34,7 @@ namespace Red_Poppies_UI.View.UserControls {
             if (!win.ToDelete) {
                 win.ToChange = false;
                 win.ToAdd = false;
+                win.ToPrint = false;
 
                 win.ToDelete = true;
 
@@ -59,11 +52,39 @@ namespace Red_Poppies_UI.View.UserControls {
 
             win.ToChange = false;
             win.ToDelete = false;
+            win.ToPrint = false;
 
             win.ToAdd = true;
 
             Visibility = Visibility.Hidden;
             win.AddWindow.Visibility = Visibility.Visible;
+        }
+
+        private void PrintButton_Click(object sender, RoutedEventArgs e) {
+            var win = (MainWindow)Window.GetWindow(this);
+
+            if (!win.ToPrint) {
+                win.ToChange = false;
+                win.ToDelete = false;
+                win.ToAdd = false;
+
+                win.ToPrint = true;
+                SetModeColor(Colors.Transparent, Colors.Blue);
+            }
+            else if(win.ListToPrint.Count == 0){
+                win.ToPrint = false;
+                SetModeColor(Colors.Transparent, Colors.Transparent);
+            }
+            else {
+                WriteToWord.WriteToFile(win.ListToPrint, "word.docx");
+
+                win.ListToPrint.Clear();
+
+                win.WorkerWorkDesk.List.List.ItemsSource = ViewList.GetClientList(win.MySQL.Holidaymakers.ToList());
+
+                win.ToPrint = false;
+                SetModeColor(Colors.Transparent, Colors.Transparent);
+            }
         }
 
         public void SetModeColor(Color from, Color to) {
