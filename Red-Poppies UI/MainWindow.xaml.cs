@@ -41,10 +41,10 @@ namespace Red_Poppies_UI {
             }
         }
 
-        private async void Window_Loaded(object sender, RoutedEventArgs e) {
+        private void Window_Loaded(object sender, RoutedEventArgs e) {
             ChoiseForm.Visibility = Visibility.Visible;
             MySQL = new MySQL();
-            await CheckConnect();
+            CheckConnect();
         }
 
         private void ClickRowElement(object sender, RoutedEventArgs e) {
